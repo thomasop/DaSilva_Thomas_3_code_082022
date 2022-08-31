@@ -131,10 +131,10 @@ main img {
         color: white;
         text-decoration: none;
         box-shadow: 0px 3px 8px 2px $shadow-color;
-        transition: all 1s;
+        transition: all 500ms;
         &:hover {
-            opacity: .7;
-            box-shadow: 3px 3px 6px 4px $shadow-color;
+            opacity: .8;
+            box-shadow: 1px 5px 9px 6px $shadow-color;
         }
     }
 }
