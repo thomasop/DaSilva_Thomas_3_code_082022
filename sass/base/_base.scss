@@ -1,9 +1,7 @@
 @import "../utils/mixins";
 
 * {
-    @include mobile {
-        box-sizing: border-box;
-    }
+    box-sizing: border-box;
 }
 
 *:focus {
@@ -11,8 +9,6 @@
 }
 
 body, p {
-    @include mobile {
-        font-family: 'Roboto', sans-serif;
-        margin: 0px;
-    }
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }

@@ -1,0 +1,23 @@
+@keyframes like {
+    0% {
+        text-shadow: 0 -1px $color-primaire, 0 1px $color-primaire, -1px 0 $color-primaire, 1px 0 $color-primaire;
+        opacity: 0;
+    }
+    20% {
+        opacity: .2;
+    }
+    40% {
+        opacity: .4;
+    }
+    60% {
+        opacity: .6;
+    }
+    80% {
+        opacity: .8;
+    }
+    100% {
+        color: $color-primaire;
+        text-shadow: 0 -1px $color-primaire, 0 1px $color-primaire, -1px 0 $color-primaire, 1px 0 $color-primaire;
+        opacity: 1;
+    }
+}
