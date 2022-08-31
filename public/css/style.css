@@ -429,6 +429,7 @@ main img {
 .menu__food--width {
   width: 100%;
   padding: 10px;
+  min-width: 100px;
 }
 .menu__food--width--checkmark {
   background-color: #F6F7F6;
@@ -452,7 +453,18 @@ main img {
   padding-left: 1px;
   padding-top: 2px;
   padding-right: 1px;
-  transition: all 500ms 200ms;
+  transition: all 400ms 200ms;
+}
+.menu__food--width--checkmark:hover {
+  width: 50px;
+  opacity: 1;
+}
+.menu__food--width:hover + .menu__food--width--checkmark {
+  width: 50px;
+  opacity: 1;
+}
+.menu__food--width:hover + .menu__food--width--checkmark > .menu__food--width--checkmark__icon > .menu__food--width--checkmark__icon--i {
+  transform: rotate(360deg);
 }
 .menu__food h3 {
   margin: 0px;
