@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@media screen and (max-width: 320px) {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 320px) {
+  body, p {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header i {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header a {
+    position: absolute;
+    color: black;
+    top: 23px;
+    left: 17px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header figure {
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header figure img {
+    width: 140px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    background-color: rgba(0, 0, 0, 0.792);
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__h2 {
+    font-size: 15px;
+    font-family: "Shrikhand", cursive;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__link {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__icone {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+}
+.footer__icone__utensils {
+  margin-right: 14px;
+}
+
+.form__input {
+  background: linear-gradient(180deg, rgba(153, 226, 208, 0.48), #d1fdf2);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin-bottom: 0px;
+  border: 0px;
+  border-top: 2px solid rgba(76, 112, 103, 0.1764705882);
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.form__icone {
+  position: absolute;
+  left: 95px;
+  top: 72px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.intro {
+  text-align: center;
+  background-color: rgba(246, 247, 246, 0.7607843137);
+  padding-bottom: 55px;
+}
+.intro__h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-block-end: 0px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+.intro__p {
+  margin-bottom: 40px;
+  margin-left: 15px;
+  font-size: 14px;
+  margin-right: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+.intro__a {
+  background: linear-gradient(177deg, #FF79DA, #9356DC);
+  border-radius: 30px;
+  padding: 12px 14px 12px 14px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 3px 8px 2px #99e2d0;
+}
+
+.operation {
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+.operation__h2 {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+.operation__number {
+  position: relative;
+  top: 40px;
+  left: 5px;
+  width: 22px;
+  height: 22px;
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+.operation__content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F6F7F6;
+  box-shadow: 0px 3px 10px #99e2d0;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.operation__content:hover {
+  background-color: rgba(173, 216, 230, 0.3333333333);
+}
+.operation__content:hover .operation__icone {
+  color: #9356DC;
+}
+.operation__p {
+  text-align: center;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  margin-left: -90px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+.operation__icone {
+  color: #73aea0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 16px;
+  margin-left: -15px;
+}
+
+.restaurant {
+  background-color: #F6F7F6;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  margin-top: 10px;
+  padding-bottom: 52px;
+}
+.restaurant__h2 {
+  font-size: 20px;
+}
+.restaurant__i {
+  text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
+  color: white;
+}
+.restaurant__i:hover {
+  animation: like 1s both;
+}
+.restaurant__block {
+  display: block;
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.089);
+}
+.restaurant__img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.restaurant__p--border {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.restaurant__p--bold {
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.restaurant__p--padding {
+  padding-left: 10px;
+  margin-bottom: -8px;
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+.restaurant__new {
+  position: relative;
+  bottom: 183px;
+  left: 212px;
+  width: 80px;
+  height: 20px;
+  border-radius: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4px 9px 4px 9px;
+  text-align: center;
+  background-color: #99E2D0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.restaurant__i {
+  float: right;
+  margin-right: 15px;
+}
+.restaurant a {
+  color: black;
+  text-decoration: none;
+}
+.restaurant__p__old--padding {
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+main img {
+  width: 100%;
+  object-fit: cover;
+  height: 219px;
+}
+
+.menu {
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+  background-color: #F6F7F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 10px 15px 20px 15px;
+}
+.menu__content > div {
+  margin-bottom: 35px;
+}
+.menu__h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 550;
+  font-size: 20px;
+}
+.menu__icon {
+  float: right;
+  margin-bottom: auto;
+  margin-top: auto;
+  color: white;
+  font-size: 17px;
+  margin-right: 20px;
+  text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
+}
+.menu__h2 {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 250;
+  font-size: 14px;
+  padding-bottom: 7px;
+  width: 35px;
+  height: 100%;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.329);
+}
+.menu__food {
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.072);
+  margin-bottom: 15px;
+}
+.menu__food--width {
+  width: 100%;
+  padding: 10px;
+}
+.menu__food--width--checkmark {
+  background-color: #F6F7F6;
+  display: flex;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.menu__food--width--checkmark__icon--i {
+  color: white;
+  background-color: #99E2D0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding-left: 1px;
+  padding-top: 2px;
+  padding-right: 1px;
+  transition: all 500ms 200ms;
+}
+.menu__food h3 {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 100px;
+}
+.menu__food__block {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__food__desc {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 100px;
+}
+.menu__food__price {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.menu__button {
+  padding-bottom: 45px;
+  padding-top: 15px;
+  text-align: center;
+}
+.menu__link {
+  background: linear-gradient(177deg, #FF79DA, #9356DC);
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 3px 8px 2px #99e2d0;
+  transition: all 1s;
+}
+.menu__link:hover {
+  opacity: 0.7;
+  box-shadow: 3px 3px 6px 4px #99e2d0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@import "../utils/mixins";
+
+.footer {
+    @include mobile {
+        background-color: rgba(0, 0, 0, 0.792);
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    &__h2 {
+        @include mobile {
+            font-size: 15px;
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+    &__link {
+        @include mobile {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+        }
+    }
+    &__icone {
+        @include mobile {
+            margin-right: 10px;
+            font-size: 13px;
+        }
+        &__utensils {
+            margin-right: 14px;
+        }
+    }
+}

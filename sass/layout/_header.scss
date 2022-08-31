@@ -1,0 +1,32 @@
+@import "../utils/mixins";
+
+header {
+    i {
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+    a {
+        @include mobile {
+            position: absolute;
+            color: black;
+            top: 23px;
+            left: 17px;
+        }
+    }
+    figure {
+        @include mobile {
+            text-align: center;
+            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        img {
+            @include mobile {
+                width: 140px;
+                margin-top: 10px;
+            }
+            
+        }
+    }
+}

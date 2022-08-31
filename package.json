@@ -1,0 +1,22 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Welcome in your site.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasop/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasop/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/thomasop/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.54.6"
+  }
+}

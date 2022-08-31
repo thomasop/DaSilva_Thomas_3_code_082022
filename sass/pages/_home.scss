@@ -1,0 +1,198 @@
+@import "../utils/variables";
+
+.form {
+    &__input {
+        background: linear-gradient(180deg, rgb(153 226 208 / 48%), #d1fdf2);
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        margin-bottom: 0px;
+        border: 0px;
+        border-top: 2px solid #4c70672d;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &__icone {
+        position: absolute;
+        left: 95px;
+        top: 72px;
+        font-size: 13px;
+        color: rgba($color: #000000, $alpha: .7);
+    }
+}
+
+.intro {
+    text-align: center;
+    background-color: #f6f7f6c2;
+    padding-bottom: 55px;
+    &__h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-block-start: 0px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-block-end: 0px;
+        padding-top: 25px;
+        margin-bottom: 10px;
+    }
+    &__p {
+        margin-bottom: 40px;
+        margin-left: 15px;
+        font-size: 14px;
+        margin-right: 15px;
+        font-weight: 300;
+        color: rgba($color: #000000, $alpha: .7);
+    }
+    &__a {
+        background: linear-gradient(177deg, $color-secondaire, $color-primaire);
+        border-radius: 30px;
+        padding: 12px 14px 12px 14px;
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 3px 8px 2px $shadow-color;
+    }
+}
+
+.operation {
+    margin-left: 15px;
+    margin-bottom: 50px;
+    &__h2 {
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 30px;
+        margin-bottom: -5px;
+    }
+    &__number {
+        position: relative;
+        top: 40px;
+        left: 5px;
+        width: 22px;
+        height: 22px;
+        padding-top: 4px;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        border-radius: 50%;
+        background-color: $color-primaire;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        background-color: $other-color;
+        box-shadow: 0px 3px 10px $shadow-color;;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background-color: #add8e655;
+        }
+        &:hover .operation__icone {
+            color: $color-primaire;
+        }
+    }
+    &__p {
+        text-align: center;
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 13px;
+        margin-left: -90px;
+        font-weight: 500;
+        color: rgba($color: #000000, $alpha: .7);
+    }
+    &__icone {
+        color: #73aea0;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 16px;
+        margin-left: -15px;
+    }
+}
+
+.restaurant {
+    background-color: $other-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    margin-top: 10px;
+    padding-bottom: 52px;
+    &__h2 {
+        font-size: 20px;
+    }
+    &__i {
+        text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
+        color: white;
+        &:hover {
+            animation: like 1s both;
+        }
+    }
+    &__block {
+        display: block;
+        background-color: white;
+        margin-top: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.089);
+    }
+    &__img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    &__p {
+        &--border {
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+        }
+        &--bold {
+            font-weight: 500;
+            font-size: 16px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        &--padding {
+            padding-left: 10px;
+            margin-bottom: -8px;
+            padding-top: 2px;
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba($color: #000000, $alpha: .7);
+        }
+    }
+    &__new {
+        position: relative;
+        bottom: 183px;
+        left: 212px;
+        width: 80px;
+        height: 20px;
+        border-radius: 2px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 4px 9px 4px 9px;
+        text-align: center;
+        background-color: $color-tertiaire;
+        font-size: 12px;
+        color: rgba($color: #000000, $alpha: .5);
+    }
+    &__i {
+        float: right;
+        margin-right: 15px;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    &__p__old--padding {
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+    }
+}
