@@ -57,6 +57,20 @@
     display: none;
   }
 }
+@keyframes progress {
+  0% {
+    transform: translateY(20px);
+    position: relative;
+    z-index: -1000;
+    opacity: 0;
+  }
+  100% {
+    z-index: 0;
+    opacity: 1;
+    position: relative;
+    transform: translateY(0px);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -489,6 +503,40 @@ main img {
 .menu__link:hover {
   opacity: 0.8;
   box-shadow: 1px 5px 9px 6px #99e2d0;
+}
+
+.progress-anim {
+  animation: progress 400ms both ease-out;
+}
+.progress-anim--1 {
+  animation-delay: 300ms;
+}
+.progress-anim--2 {
+  animation-delay: 600ms;
+}
+.progress-anim--3 {
+  animation-delay: 900ms;
+}
+.progress-anim--4 {
+  animation-delay: 1200ms;
+}
+.progress-anim--5 {
+  animation-delay: 1500ms;
+}
+.progress-anim--6 {
+  animation-delay: 1800ms;
+}
+.progress-anim--7 {
+  animation-delay: 2100ms;
+}
+.progress-anim--8 {
+  animation-delay: 2400ms;
+}
+.progress-anim--9 {
+  animation-delay: 2700ms;
+}
+.progress-anim--10 {
+  animation-delay: 3000ms;
 }
 
 /*# sourceMappingURL=style.css.map */

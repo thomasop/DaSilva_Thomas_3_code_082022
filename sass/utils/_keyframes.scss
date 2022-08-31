@@ -58,3 +58,18 @@
         display: none;
     }
 }
+
+@keyframes progress {
+    0% {
+        transform: translateY(20px);
+        position: relative;
+        z-index: -1000;
+        opacity: 0;
+    }
+    100% {
+        z-index: 0;
+        opacity: 1;
+        position: relative;
+        transform: translateY(0px);
+    }
+}

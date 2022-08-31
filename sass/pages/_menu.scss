@@ -138,3 +138,12 @@ main img {
         }
     }
 }
+
+.progress-anim {
+    animation: progress $anim-dur both ease-out;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 300ms * $i;
+        }
+    }
+}
