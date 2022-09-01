@@ -144,6 +144,10 @@
 .operation {
     margin-left: 15px;
     margin-bottom: 50px;
+    @include desktop {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     &__block {
         @include tablette {
             display: flex;
@@ -243,11 +247,19 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        @include desktop {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
     &__h2 {
         font-size: 20px;
         @include tablette {
             font-size: 21px;
+        }
+        @include desktop {
+            margin-left: 10%;
+            margin-right: 10%;
         }
     }
     &__i {
@@ -269,6 +281,9 @@
         }
         @include tablette {
             width: 300px;
+        }
+        @include desktop {
+            width: 380px;
         }
     }
     &__img {

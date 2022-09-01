@@ -4,6 +4,9 @@ main img {
     width: 100%;
     object-fit: cover;
     height: 219px;
+    @include desktop {
+        height: 519px;
+    }
 }
 
 .menu {
@@ -14,9 +17,17 @@ main img {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 10px 15px 20px 15px;
+    @include desktop {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     &__content {
         > div {
             margin-bottom: 35px;
+            @include desktop {
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
     &__h1 {
@@ -65,6 +76,9 @@ main img {
         border-radius: 15px;
         box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.072);
         margin-bottom: 15px;
+        @include desktop {
+            width: 30%;
+        }
         &--width{
             width: 100%;
             padding: 10px;

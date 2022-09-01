@@ -335,6 +335,12 @@ header figure img {
   margin-left: 15px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 992px) {
+  .operation {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 @media screen and (min-width: 768px) {
   .operation__block {
     display: flex;
@@ -445,12 +451,24 @@ header figure img {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 992px) {
+  .restaurant__content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 .restaurant__h2 {
   font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .restaurant__h2 {
     font-size: 21px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__h2 {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 .restaurant__i {
@@ -474,6 +492,11 @@ header figure img {
 @media screen and (min-width: 768px) {
   .restaurant__block {
     width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__block {
+    width: 380px;
   }
 }
 .restaurant__img {
@@ -545,6 +568,11 @@ main img {
   object-fit: cover;
   height: 219px;
 }
+@media screen and (min-width: 992px) {
+  main img {
+    height: 519px;
+  }
+}
 
 .menu {
   margin-top: -50px;
@@ -555,8 +583,20 @@ main img {
   border-top-right-radius: 30px;
   padding: 10px 15px 20px 15px;
 }
+@media screen and (min-width: 992px) {
+  .menu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 .menu__content > div {
   margin-bottom: 35px;
+}
+@media screen and (min-width: 992px) {
+  .menu__content > div {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .menu__h1 {
   font-family: "Shrikhand", cursive;
@@ -610,6 +650,11 @@ main img {
   border-radius: 15px;
   box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.072);
   margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  .menu__food {
+    width: 30%;
+  }
 }
 .menu__food--width {
   width: 100%;
