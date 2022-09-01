@@ -59,6 +59,24 @@
     }
 }
 
+@keyframes spininv {
+    0% {
+        opacity: 1;
+        transform: rotate(2440deg);
+    }
+    98% {
+        opacity: 1;
+    }
+    99% {
+        opacity: .009;
+    }
+    100% {
+        z-index: -999;
+        opacity: 0;
+        display: none;
+    }
+}
+
 @keyframes progress {
     0% {
         transform: translateY(20px);

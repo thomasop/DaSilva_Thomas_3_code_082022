@@ -23,6 +23,19 @@
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
         animation: spin 2900ms forwards;
+        &--inv {
+            position: relative;
+            width: 30px;
+            left: 10px;
+            z-index: 999;
+            height: 30px;
+            border-radius: 50%;
+            border-top: 1px solid $color-secondaire;
+            border-bottom: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            animation: spininv 2900ms forwards;
+        }
     }
     &__ball {
         position: relative;
@@ -34,6 +47,16 @@
         background-color: $color-primaire;
         border-radius: 50%;
         animation: spin 2900ms forwards;
+        &--inv {
+            position: relative;
+            z-index: 999;
+            top: 2px;
+            width: 5px;
+            height: 5px;
+            background-color: $color-secondaire;
+            border-radius: 50%;
+            animation: spininv 2900ms forwards;
+        }
     }
     &__text {
         color: $color-primaire;
@@ -41,26 +64,25 @@
 }
 
 .form {
-    &__input {
+    div {
         background: linear-gradient(180deg, rgb(153 226 208 / 48%), #d1fdf2);
-        width: 100%;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 13px;
-        margin-bottom: 0px;
-        border: 0px;
         border-top: 2px solid #4c70672d;
-        padding-right: 0px;
-        padding-left: 0px;
+        cursor: text;
     }
     &__icone {
-        position: absolute;
-        left: 95px;
-        top: 72px;
-        font-size: 13px;
+        font-size: 14px;
+        padding-bottom: 4px;
         color: rgba($color: #000000, $alpha: .7);
+        margin-left: -15px;
+    }
+    &__text {
+        margin-left: 15px;
+        font-size: 13px;
     }
 }
 
@@ -113,8 +135,8 @@
     }
     &__number {
         position: relative;
-        top: 40px;
-        left: 5px;
+        top: 20px;
+        left: -10px;
         width: 22px;
         height: 22px;
         padding-top: 4px;
@@ -127,8 +149,7 @@
         background-color: $color-primaire;
     }
     &__content {
-        display: flex;
-        justify-content: space-around;
+        margin-top: 20px;
         background-color: $other-color;
         box-shadow: 0px 3px 10px $shadow-color;;
         border-radius: 15px;
@@ -141,6 +162,11 @@
         }
         &:hover .operation__icone {
             color: $color-primaire;
+        }
+        div {
+            display: flex;
+            justify-content: space-around;
+            margin-top: -20px;
         }
     }
     &__p {
@@ -194,8 +220,8 @@
         width: 100%;
         height: 150px;
         object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
     }
     &__p {
         &--border {
@@ -210,22 +236,20 @@
         }
         &--padding {
             padding-left: 10px;
-            margin-bottom: -8px;
             padding-top: 2px;
             font-size: 14px;
             font-weight: 300;
+            padding-bottom: 10px;
             color: rgba($color: #000000, $alpha: .7);
         }
     }
     &__new {
-        position: relative;
-        bottom: 183px;
-        left: 212px;
+        position: absolute;
+        margin-top: 10px;
+        right: 25px;
         width: 80px;
         height: 20px;
         border-radius: 2px;
-        margin-top: auto;
-        margin-bottom: auto;
         padding: 4px 9px 4px 9px;
         text-align: center;
         background-color: $color-tertiaire;
@@ -239,9 +263,5 @@
     a {
         color: black;
         text-decoration: none;
-    }
-    &__p__old--padding {
-        padding-bottom: 10px;
-        margin-bottom: 8px;
     }
 }

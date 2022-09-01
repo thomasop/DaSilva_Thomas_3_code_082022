@@ -11,6 +11,9 @@
     <div class="load">
         <div class="load__spin">
             <div class="load__ball"></div>
+            <div class="load__spin--inv">
+                <div class="load__ball--inv"></div>
+            </div>
         </div>
         <div class="load__text">
             <p>Chargement</p>
@@ -24,7 +27,10 @@
     <main>
         <section>
             <form class="form" action="#" method="POST">
-                <input class="form__input" type="text" value="Paris, Belleville"><i class="form__icone fa-solid fa-location-dot"></i>
+                <div>
+                    <span><i class="form__icone fa-solid fa-location-dot"></i></span>
+                    <span><p class="form__text">Paris, Belleville</p></span>
+                </div>
             </form>
             <div class="intro">
                 <h2 class="intro__h2">Réservez le menu qui vous convient</h2>
@@ -35,20 +41,26 @@
         <section class="operation">
             <h2 class="operation__h2">Fonctionnement</h2>
             <div class="operation__block">
-                <p class="operation__number">1</p>
                 <div class="operation__content">
-                    <i class="operation__icone fa-solid fa-mobile-screen-button"></i>
-                    <p class="operation__p">Choisissez un retaurant</p>
+                    <p class="operation__number">1</p>
+                    <div>
+                        <i class="operation__icone fa-solid fa-mobile-screen-button"></i>
+                        <p class="operation__p">Choisissez un retaurant</p>
+                    </div>
                 </div>
-                <p class="operation__number">2</p>
                 <div class="operation__content">
-                    <i class="operation__icone fa-solid fa-list-ul"></i>
-                    <p class="operation__p">Composez votre menu</p>
+                    <p class="operation__number">2</p>
+                    <div>
+                        <i class="operation__icone fa-solid fa-list-ul"></i>
+                        <p class="operation__p">Composez votre menu</p>
+                    </div>
                 </div>
-                <p class="operation__number">3</p>
                 <div class="operation__content">
-                    <i class="operation__icone fa-solid fa-store"></i>
-                    <p class="operation__p">Dégustez au restaurant</p>
+                    <p class="operation__number">3</p>
+                    <div>
+                        <i class="operation__icone fa-solid fa-store"></i>
+                        <p class="operation__p">Dégustez au restaurant</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -57,32 +69,30 @@
             <div class="restaurant__content">
                 <a href="menu/la-palette-du-gout.html">
                     <span class="restaurant__block">
-                        <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/la-palette-du-gout.jpg" alt="La palette du goût"></p>
+                        <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/la-palette-du-gout.jpg" alt="La palette du goût"><span class="restaurant__new">Nouveau</span></p>
                         <p class="restaurant__p--bold">La palette du goût<i class="restaurant__i fa-solid fa-heart"></i></p>
                         <p class="restaurant__p--padding">Ménilmontant</p>
-                        <span class="restaurant__new">Nouveau</span>
                     </span>
                 </a>
                 <a href="menu/la-note-enchantée.html">
                     <span class="restaurant__block">
-                        <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/la-note-enchantée.jpg" alt="La note enchantée"></p>
+                        <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/la-note-enchantée.jpg" alt="La note enchantée"><span class="restaurant__new">Nouveau</span></p>
                         <p class="restaurant__p--bold">La note enchantée<i class="restaurant__i fa-solid fa-heart"></i></p>
                         <p class="restaurant__p--padding">Charonne</p>
-                        <span class="restaurant__new">Nouveau</span>
                     </span>
                 </a>
                 <a href="menu/a-la-française.html">
                     <span class="restaurant__block">
                         <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/a-la-française.jpg" alt="À la française"></p>
                         <p class="restaurant__p--bold">A la française<i class="restaurant__i fa-solid fa-heart"></i></p>
-                        <p class="restaurant__p--padding restaurant__p__old--padding">Cité Rouge</p>
+                        <p class="restaurant__p--padding">Cité Rouge</p>
                     </span>
                 </a>
                 <a href="menu/le-delice-des-sens.html">
                     <span class="restaurant__block">
                         <p class="restaurant__p--border"><img class="restaurant__img" src="assets/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens"></p>
                         <p class="restaurant__p--bold">Le délice des sens<i class="restaurant__i fa-solid fa-heart"></i></p>
-                        <p class="restaurant__p--padding restaurant__p__old--padding">Folie-Méricourt</p>
+                        <p class="restaurant__p--padding">Folie-Méricourt</p>
                     </span>
                 </a>
                 
