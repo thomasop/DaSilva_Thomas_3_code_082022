@@ -24,15 +24,15 @@
 }
 @keyframes load {
   0% {
-    z-index: 100;
+    z-index: 999;
     opacity: 1;
   }
   50% {
-    z-index: 100;
+    z-index: 999;
     opacity: 1;
   }
   90% {
-    z-index: 100;
+    z-index: 999;
     opacity: 1;
   }
   100% {
@@ -104,6 +104,11 @@ body, p {
 header i {
   font-size: 18px;
 }
+@media screen and (min-width: 768px) {
+  header i {
+    font-size: 19px;
+  }
+}
 header a {
   position: absolute;
   color: black;
@@ -120,6 +125,11 @@ header figure img {
   width: 140px;
   margin-top: 10px;
 }
+@media screen and (min-width: 768px) {
+  header figure img {
+    width: 150px;
+  }
+}
 
 .footer {
   background-color: rgba(0, 0, 0, 0.792);
@@ -128,14 +138,36 @@ header figure img {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__h2 {
   font-size: 15px;
   font-family: "Shrikhand", cursive;
+}
+@media screen and (min-width: 768px) {
+  .footer__h2 {
+    font-size: 17px;
+  }
 }
 .footer__link {
   text-decoration: none;
   color: white;
   font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .footer__link {
+    font-size: 14px;
+  }
 }
 .footer__icone {
   margin-right: 10px;
@@ -143,6 +175,11 @@ header figure img {
 }
 .footer__icone__utensils {
   margin-right: 14px;
+}
+@media screen and (min-width: 768px) {
+  .footer__icone {
+    font-size: 14px;
+  }
 }
 
 .load {
@@ -156,6 +193,8 @@ header figure img {
   align-items: center;
   top: 0;
   margin: 0px;
+  z-index: -999;
+  opacity: 0;
   animation: load 3s both;
 }
 .load__spin {
@@ -224,9 +263,19 @@ header figure img {
   color: rgba(0, 0, 0, 0.7);
   margin-left: -15px;
 }
+@media screen and (min-width: 768px) {
+  .form__icone {
+    font-size: 15px;
+  }
+}
 .form__text {
   margin-left: 15px;
   font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .form__text {
+    font-size: 14px;
+  }
 }
 
 .intro {
@@ -244,6 +293,11 @@ header figure img {
   padding-top: 25px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .intro__h2 {
+    font-size: 21px;
+  }
+}
 .intro__p {
   margin-bottom: 40px;
   margin-left: 15px;
@@ -251,6 +305,11 @@ header figure img {
   margin-right: 15px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .intro__p {
+    font-size: 15px;
+  }
 }
 .intro__a {
   background: linear-gradient(177deg, #FF79DA, #9356DC);
@@ -266,16 +325,32 @@ header figure img {
   opacity: 0.8;
   box-shadow: 1px 5px 9px 6px #99e2d0;
 }
+@media screen and (min-width: 768px) {
+  .intro__a {
+    font-size: 14px;
+  }
+}
 
 .operation {
   margin-left: 15px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .operation__block {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .operation__h2 {
   font-size: 20px;
   margin-left: 5px;
   margin-top: 30px;
   margin-bottom: -5px;
+}
+@media screen and (min-width: 768px) {
+  .operation__h2 {
+    font-size: 21px;
+  }
 }
 .operation__number {
   position: relative;
@@ -291,6 +366,13 @@ header figure img {
   color: white;
   border-radius: 50%;
   background-color: #9356DC;
+}
+@media screen and (min-width: 768px) {
+  .operation__number {
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+  }
 }
 .operation__content {
   margin-top: 20px;
@@ -313,6 +395,11 @@ header figure img {
   justify-content: space-around;
   margin-top: -20px;
 }
+@media screen and (min-width: 768px) {
+  .operation__content {
+    width: 30%;
+  }
+}
 .operation__p {
   text-align: center;
   padding: 20px;
@@ -323,12 +410,24 @@ header figure img {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
 }
+@media screen and (min-width: 768px) {
+  .operation__p {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+}
 .operation__icone {
   color: #73aea0;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 16px;
   margin-left: -15px;
+}
+@media screen and (min-width: 768px) {
+  .operation__icone {
+    margin-left: 10px;
+    margin-right: -40px;
+  }
 }
 
 .restaurant {
@@ -339,8 +438,20 @@ header figure img {
   margin-top: 10px;
   padding-bottom: 52px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .restaurant__h2 {
   font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__h2 {
+    font-size: 21px;
+  }
 }
 .restaurant__i {
   text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
@@ -360,6 +471,11 @@ header figure img {
 .restaurant__block:hover {
   box-shadow: 1px 4px 8px 5px rgba(0, 0, 0, 0.089);
 }
+@media screen and (min-width: 768px) {
+  .restaurant__block {
+    width: 300px;
+  }
+}
 .restaurant__img {
   width: 100%;
   height: 150px;
@@ -377,6 +493,11 @@ header figure img {
   padding-left: 10px;
   padding-top: 10px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__p--bold {
+    font-size: 17px;
+  }
+}
 .restaurant__p--padding {
   padding-left: 10px;
   padding-top: 2px;
@@ -384,6 +505,11 @@ header figure img {
   font-weight: 300;
   padding-bottom: 10px;
   color: rgba(0, 0, 0, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .restaurant__p--padding {
+    font-size: 15px;
+  }
 }
 .restaurant__new {
   position: absolute;
@@ -397,6 +523,13 @@ header figure img {
   background-color: #99E2D0;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .restaurant__new {
+    right: unset;
+    margin-left: -95px;
+    font-size: 13px;
+  }
 }
 .restaurant__i {
   float: right;
@@ -430,6 +563,11 @@ main img {
   font-weight: 550;
   font-size: 20px;
 }
+@media screen and (min-width: 768px) {
+  .menu__h1 {
+    font-size: 21px;
+  }
+}
 .menu__icon {
   float: right;
   cursor: pointer;
@@ -443,6 +581,11 @@ main img {
 .menu__icon:hover {
   animation: like 1s both;
 }
+@media screen and (min-width: 768px) {
+  .menu__icon {
+    font-size: 18px;
+  }
+}
 .menu__h2 {
   font-weight: 400;
   font-size: 18px;
@@ -454,6 +597,11 @@ main img {
   width: 35px;
   height: 100%;
   border-bottom: solid 3px rgba(0, 0, 0, 0.329);
+}
+@media screen and (min-width: 768px) {
+  .menu__h2 {
+    font-size: 15px;
+  }
 }
 .menu__food {
   background-color: white;
@@ -514,6 +662,11 @@ main img {
   overflow: hidden;
   min-width: 100px;
 }
+@media screen and (min-width: 768px) {
+  .menu__food h3 {
+    font-size: 16px;
+  }
+}
 .menu__food__block {
   display: flex;
   justify-content: space-between;
@@ -527,10 +680,20 @@ main img {
   overflow: hidden;
   min-width: 100px;
 }
+@media screen and (min-width: 768px) {
+  .menu__food__desc {
+    font-size: 14px;
+  }
+}
 .menu__food__price {
   font-size: 13px;
   font-weight: 400;
   margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .menu__food__price {
+    font-size: 14px;
+  }
 }
 .menu__button {
   padding-bottom: 45px;
@@ -552,6 +715,11 @@ main img {
 .menu__link:hover {
   opacity: 0.8;
   box-shadow: 1px 5px 9px 6px #99e2d0;
+}
+@media screen and (min-width: 768px) {
+  .menu__link {
+    font-size: 14px;
+  }
 }
 
 .progress-anim {

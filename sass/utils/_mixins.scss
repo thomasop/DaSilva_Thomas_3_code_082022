@@ -1,1 +1,7 @@
 @import "./maps";
+
+@mixin tablette {
+    @media screen and (min-width: map-get($break, tablette)) {
+        @content
+    }
+}

@@ -11,6 +11,8 @@
     align-items: center;
     top: 0;
     margin: 0px;
+    z-index: -999;
+    opacity: 0;
     animation: load 3s both;
     &__spin {
         position: relative;
@@ -79,10 +81,16 @@
         padding-bottom: 4px;
         color: rgba($color: #000000, $alpha: .7);
         margin-left: -15px;
+        @include tablette {
+            font-size: 15px;
+        }
     }
     &__text {
         margin-left: 15px;
         font-size: 13px;
+        @include tablette {
+            font-size: 14px;
+        }
     }
 }
 
@@ -99,6 +107,9 @@
         margin-block-end: 0px;
         padding-top: 25px;
         margin-bottom: 10px;
+        @include tablette {
+            font-size: 21px;
+        }
     }
     &__p {
         margin-bottom: 40px;
@@ -107,6 +118,9 @@
         margin-right: 15px;
         font-weight: 300;
         color: rgba($color: #000000, $alpha: .7);
+        @include tablette {
+            font-size: 15px;
+        }
     }
     &__a {
         background: linear-gradient(177deg, $color-secondaire, $color-primaire);
@@ -121,17 +135,29 @@
             opacity: .8;
             box-shadow: 1px 5px 9px 6px $shadow-color;
         }
+        @include tablette {
+            font-size: 14px;
+        }
     }
 }
 
 .operation {
     margin-left: 15px;
     margin-bottom: 50px;
+    &__block {
+        @include tablette {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     &__h2 {
         font-size: 20px;
         margin-left: 5px;
         margin-top: 30px;
         margin-bottom: -5px;
+        @include tablette {
+            font-size: 21px;
+        }
     }
     &__number {
         position: relative;
@@ -147,6 +173,11 @@
         color: white;
         border-radius: 50%;
         background-color: $color-primaire;
+        @include tablette {
+            width: 25px;
+            height: 25px;
+            padding-top: 5px;
+        }
     }
     &__content {
         margin-top: 20px;
@@ -168,6 +199,9 @@
             justify-content: space-around;
             margin-top: -20px;
         }
+        @include tablette {
+            width: 30%;
+        }
     }
     &__p {
         text-align: center;
@@ -178,6 +212,10 @@
         margin-left: -90px;
         font-weight: 500;
         color: rgba($color: #000000, $alpha: .7);
+        @include tablette {
+            margin-left: 0px;
+            font-size: 14px;
+        }
     }
     &__icone {
         color: #73aea0;
@@ -185,6 +223,10 @@
         margin-bottom: auto;
         font-size: 16px;
         margin-left: -15px;
+        @include tablette {
+            margin-left: 10px;
+            margin-right: -40px;
+        }
     }
 }
 
@@ -195,8 +237,18 @@
     padding-top: 25px;
     margin-top: 10px;
     padding-bottom: 52px;
+    &__content {
+        @include tablette {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
     &__h2 {
         font-size: 20px;
+        @include tablette {
+            font-size: 21px;
+        }
     }
     &__i {
         text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
@@ -214,6 +266,9 @@
         box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.089);
         &:hover {
             box-shadow: 1px 4px 8px 5px rgba(0, 0, 0, 0.089);
+        }
+        @include tablette {
+            width: 300px;
         }
     }
     &__img {
@@ -233,6 +288,9 @@
             font-size: 16px;
             padding-left: 10px;
             padding-top: 10px;
+            @include tablette {
+                font-size: 17px;
+            }
         }
         &--padding {
             padding-left: 10px;
@@ -241,6 +299,9 @@
             font-weight: 300;
             padding-bottom: 10px;
             color: rgba($color: #000000, $alpha: .7);
+            @include tablette {
+                font-size: 15px;
+            }
         }
     }
     &__new {
@@ -255,6 +316,11 @@
         background-color: $color-tertiaire;
         font-size: 12px;
         color: rgba($color: #000000, $alpha: .5);
+        @include tablette {
+            right: unset;
+            margin-left: -95px;
+            font-size: 13px;
+        }
     }
     &__i {
         float: right;

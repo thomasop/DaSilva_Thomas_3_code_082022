@@ -3,6 +3,9 @@
 header {
     i {
         font-size: 18px;
+        @include tablette {
+            font-size: 19px;
+        }
     }
     a {
         position: absolute;
@@ -18,6 +21,9 @@ header {
         img {
             width: 140px;
             margin-top: 10px;
+            @include tablette {
+                width: 150px;
+            }
         }
     }
 }
