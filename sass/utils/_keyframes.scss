@@ -1,3 +1,5 @@
+/* like animation */
+
 @keyframes like {
     0% {
         text-shadow: 0 -1px $color-primaire, 0 1px $color-primaire, -1px 0 $color-primaire, 1px 0 $color-primaire;
@@ -22,6 +24,8 @@
     }
 }
 
+/* load animation */
+
 @keyframes load {
     0% {
         z-index: 999;
@@ -41,6 +45,8 @@
     }
 }
 
+/* spin animation */
+
 @keyframes spin {
     0% {
         opacity: 1;
@@ -59,6 +65,8 @@
     }
 }
 
+/* spin inverse animation */
+
 @keyframes spininv {
     0% {
         opacity: 1;
@@ -76,6 +84,8 @@
         display: none;
     }
 }
+
+/* progress animation */
 
 @keyframes progress {
     0% {

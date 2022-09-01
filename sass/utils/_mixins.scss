@@ -1,5 +1,7 @@
 @import "./maps";
 
+/* Mixins for responsive device */
+
 @mixin tablette {
     @media screen and (min-width: map-get($break, tablette)) {
         @content
