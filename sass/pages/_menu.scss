@@ -29,6 +29,7 @@ main img {
             @include desktop {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
         }
     }
@@ -168,7 +169,7 @@ main img {
         text-align: center;
     }
     &__link {
-        background: linear-gradient(177deg, $color-secondaire, $color-primaire);
+        background: $background-button;
         border-radius: 30px;
         padding: 10px;
         padding-left: 35px;
@@ -176,11 +177,11 @@ main img {
         font-size: 13px;
         color: white;
         text-decoration: none;
-        box-shadow: 0px 3px 8px 2px $shadow-color;
+        box-shadow: $shadow;
         transition: all 500ms;
         &:hover {
             opacity: .8;
-            box-shadow: 1px 5px 9px 6px $shadow-color;
+            box-shadow: $shadow-hover;
         }
         @include tablette {
             font-size: 14px;

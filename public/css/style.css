@@ -615,6 +615,7 @@ main img {
   .menu__content > div {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 .menu__h1 {
