@@ -69,13 +69,12 @@
 
 .form {
     div {
-        background: linear-gradient(180deg, rgb(153 226 208 / 48%), #d1fdf2);
+        background: #f3f3f3;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        border-top: 2px solid #4c70672d;
         cursor: text;
     }
     &__icone {
@@ -98,7 +97,7 @@
 
 .intro {
     text-align: center;
-    background-color: #f6f7f6c2;
+    background-color: #fafafa;
     padding-bottom: 55px;
     &__h2 {
         font-size: 20px;
@@ -125,13 +124,14 @@
         }
     }
     &__a {
-        background: $background-button;
+        background-color: $background-button;
         border-radius: 30px;
         padding: 12px 14px 12px 14px;
         font-size: 13px;
         color: white;
         text-decoration: none;
         box-shadow: $shadow;
+        background-image: $shadow-button;
         transition: all 500ms;
         &:hover {
             opacity: .8;
