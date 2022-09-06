@@ -67,7 +67,7 @@ main img {
         padding-bottom: 7px;
         width: 35px;
         height: 100%;
-        border-bottom: solid 3px rgba(0, 0, 0, 0.329);
+        border-bottom: solid 3px $color-tertiaire;
         @include tablette {
             font-size: 15px;
         }    
@@ -87,7 +87,7 @@ main img {
             padding: 10px;
             min-width: 100px;
             &--checkmark {
-                background-color: $other-color;
+                background-color: $color-tertiaire;
                 display: flex;
                 cursor: pointer;
                 height: auto;
@@ -99,8 +99,8 @@ main img {
                 transition: all 1s;
                 &__icon {
                     &--i {
-                        color: white;
-                        background-color: $color-tertiaire;
+                        color: $color-tertiaire;
+                        background-color: white;
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
